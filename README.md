@@ -3,7 +3,7 @@ A simple python script to track and log changes in my dynamic Internet IP addres
 
 # Raspberry Pi IP Tracker & Buzzer Alert
 
-A lightweight Python script designed for Raspberry Pi (specifically tested with a Cytron Maker PHAT) that monitors a dynamic DNS domain (like DuckDNS), logs IP address changes to a CSV file, and provides physical buzzer feedback.
+A lightweight Python script designed for a Raspberry Pi (specifically tested with a Raspberry Pi 3A+ and a Cytron Maker PHAT) that monitors a dynamic DNS domain (like DuckDNS), logs IP address changes to a CSV file, and provides physical buzzer feedback.
 
 
 ## Features
@@ -19,7 +19,7 @@ A lightweight Python script designed for Raspberry Pi (specifically tested with 
 ## Hardware Requirements
 
 * Raspberry Pi
-* Cytron Maker PHAT (or standard active buzzer connected to GPIO pin 26)
+* Cytron Maker PHAT (or a standard active buzzer connected to GPIO pin 26)
 
 
 ## Installation & Setup
@@ -71,6 +71,11 @@ Add one of the following lines of config to your crontab (adjusting paths to mat
 ```bash
 # Execute the script at 1 min past the hour:
 1 * * * * /usr/bin/python3 /path/to/ipTracker.py >/dev/null 2>&1
+```
+
+Finally, verify the contents of your cromtab:
+```bash
+crontab -l
 ```
 
 

@@ -73,7 +73,7 @@ Add one of the following lines of config to your crontab (adjusting paths to mat
 1 * * * * /usr/bin/python3 /path/to/ipTracker.py >/dev/null 2>&1
 ```
 
-Finally, verify the contents of your cromtab:
+Finally, verify the contents of your crontab file:
 ```bash
 crontab -l
 ```

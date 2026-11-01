@@ -5,6 +5,7 @@ A simple python script to track and log changes in my dynamic Internet IP addres
 
 A lightweight Python script designed for a Raspberry Pi (specifically tested with a Raspberry Pi 3A+ and a Cytron Maker PHAT) that monitors a dynamic DNS domain (like DuckDNS), logs IP address changes to a CSV file, and provides physical buzzer feedback.
 
+![A Cytron Maker PHAT mounted on A Raspberry Pi 3A+](images/CytronMakerPHAT-RPi3A+.jpg)
 
 ## Features
 
